@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Showroom da Sala</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div class="brand">Showroom</div>
+    <div class="hint">Clique para entrar - WASD para andar - Mouse para olhar - Clique em um movel para ver detalhes</div>
+  </div>
+  <div id="info-panel" class="hidden">
+    <button id="close-info" aria-label="Fechar">x</button>
+    <h2 id="item-title">Movel</h2>
+    <p id="item-text">Detalhes do movel escolhido.</p>
+  </div>
+  <button id="enter" class="enter">Entrar no showroom</button>
+  <canvas id="bg"></canvas>
+  <canvas id="minimap" width="200" height="200"></canvas>
+  <!-- Three core -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <!-- Loaders / postprocessing -->
+  <script src="https://unpkg.com/three@0.160.0/examples/js/loaders/RGBELoader.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/postprocessing/EffectComposer.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/postprocessing/RenderPass.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/postprocessing/SSAOPass.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/shaders/CopyShader.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
